@@ -146,7 +146,6 @@ document.addEventListener('DOMContentLoaded', function() {
             const imageUrl = track.image?.find(img => img.size === 'medium')?.['#text'] || 
                             'img/default.png';
             
-            const duration = track.duration ? formatDuration(track.duration) : '--:--';
             
             trackElement.innerHTML = `
                 <ul class="track-info-list">
@@ -164,9 +163,6 @@ document.addEventListener('DOMContentLoaded', function() {
                     <li class="track-info-item">
                         <p class="track-artist-name">${track.artist}</p>
                     </li>
-                    <li class="track-info-item">
-                        <span class="track-duration">${duration}</span>
-                    </li>
                 </ul>
             `;
             
@@ -177,17 +173,6 @@ document.addEventListener('DOMContentLoaded', function() {
     function formatNumber(num) {
         return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
-    
-    function formatDuration(milliseconds) {
-        if (!milliseconds || isNaN(milliseconds)) return '--:--';
-        
-
-        const totalSeconds = Math.floor(milliseconds / 1000);
-        const minutes = Math.floor(totalSeconds / 60);
-        const seconds = totalSeconds % 60;
-
-        return `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
-    }
-    
+      
     window.clearSearch = clearSearch;
 });

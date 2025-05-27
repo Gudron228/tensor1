@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="stylesheet" href="styles.css">
+    <title>React App</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <nav class="page-navigation">
+        <div class="navigation-logo">
+          <a href="index.html"><img src="img/logo/logo.png" alt="last.fm"></a>
+        </div>
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-item"><a class="navigation-link" href="search.html"><img src="img/icons/search.svg"><span class="visually-hidden">Поиск</span></a></li>
+          <li class="navigation-item"><a class="navigation-link" href="index.html">Home</a></li>
+          <li class="navigation-item"><a class="navigation-link" href="#">Live</a></li>
+          <li class="navigation-item"><a class="navigation-link" href="#">Music</a></li>
+          <li class="navigation-item"><a class="navigation-link" href="#">Charts</a></li>
+          <li class="navigation-item"><a class="navigation-link" href="#">Events</a></li>
+          <li class="navigation-item"><a class="navigation-link" href="#">Features</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main">
+        <header class="search-main-header">
+            <h1 class="search-main">Search results for "never gonna give you up"</h1>
+            <ul class="search-results-list">
+                <li class="search-results-item"><a class="search-results-link search-link-current" href="#">Top Results</a></li>
+                <li class="search-results-item"><a class="search-results-link" href="#">Artists</a></li>
+                <li class="search-results-item"><a class="search-results-link" href="#">Albums</a></li>
+                <li class="search-results-item"><a class="search-results-link" href="#">Tracks</a></li>
+            </ul>
+        </header>
+        <section class="search-results">
+            <form id="searchForm">
+                <input type="text" class="search-input" placeholder="never gonna give you up">
+                <button type="button" class="clear-button" onclick="clearSearch()"><img src="img/icons/clear_field.png"><span class="visually-hidden">Очистить</span></button>
+                <button type="submit" class="search-button"><img src="img/icons/search_dark.png"><span class="visually-hidden">Поиск</span></button>
+            </form>
+            <section class="search-artists">
+                <h2>Artists</h2>
+                <ul class="top-artists-list">
+                    <li class="top-artists-item"><img class="top-artists-image" src="img/artists/kanyewest.png"><a class="top-artists-link">Never Gonna Give You Up</a><span class="artist-listeners">1,751 listeners</span></li>
+                    <li class="top-artists-item"><img class="top-artists-image" src="img/artists/kanyewest.png"><a class="top-artists-link">Never Gonna Give You Up</a><span class="artist-listeners">1,751 listeners</span></li>
+                    <li class="top-artists-item"><img class="top-artists-image" src="img/artists/kanyewest.png"><a class="top-artists-link">Never Gonna Give You Up</a><span class="artist-listeners">1,751 listeners</span></li>
+                    <li class="top-artists-item"><img class="top-artists-image" src="img/artists/kanyewest.png"><a class="top-artists-link">Never Gonna Give You Up</a><span class="artist-listeners">1,751 listeners</span></li>
+                    <li class="top-artists-item"><img class="top-artists-image" src="img/artists/kanyewest.png"><a class="top-artists-link">Never Gonna Give You Up</a><span class="artist-listeners">1,751 listeners</span></li>
+                    <li class="top-artists-item"><img class="top-artists-image" src="img/artists/kanyewest.png"><a class="top-artists-link">Never Gonna Give You Up</a><span class="artist-listeners">1,751 listeners</span></li>
+                    <li class="top-artists-item"><img class="top-artists-image" src="img/artists/kanyewest.png"><a class="top-artists-link">Never Gonna Give You Up</a><span class="artist-listeners">1,751 listeners</span></li>
+                    <li class="top-artists-item"><img class="top-artists-image" src="img/artists/kanyewest.png"><a class="top-artists-link">Never Gonna Give You Up</a><span class="artist-listeners">1,751 listeners</span></li>
+                </ul>
+                <a class="more-link" href="#">More artists<img class="more-link-image" src="img/icons/arrow_small_right.png"></a>
+            </section>
+            <section class="search-albums">
+                <h2>Albums</h2>
+                <ul class="top-albums-list">
+                    <li class="top-albums-item"><img class="top-albums-image" src="img/artists/kanyewest.png"><a class="top-albums-link">Never Gonna Give You Up</a><span class="albummaker-name">Mac Beez</span></li>
+                    <li class="top-albums-item"><img class="top-albums-image" src="img/artists/kanyewest.png"><a class="top-albums-link">Never Gonna Give You Up</a><span class="albummaker-name">Mac Beez</span></li>
+                    <li class="top-albums-item"><img class="top-albums-image" src="img/artists/kanyewest.png"><a class="top-albums-link">Never Gonna Give You Up</a><span class="albummaker-name">Mac Beez</span></li>
+                    <li class="top-albums-item"><img class="top-albums-image" src="img/artists/kanyewest.png"><a class="top-albums-link">Never Gonna Give You Up</a><span class="albummaker-name">Mac Beez</span></li>
+                    <li class="top-albums-item"><img class="top-albums-image" src="img/artists/kanyewest.png"><a class="top-albums-link">Never Gonna Give You Up</a><span class="albummaker-name">Mac Beez</span></li>
+                    <li class="top-albums-item"><img class="top-albums-image" src="img/artists/kanyewest.png"><a class="top-albums-link">Never Gonna Give You Up</a><span class="albummaker-name">Mac Beez</span></li>
+                    <li class="top-albums-item"><img class="top-albums-image" src="img/artists/kanyewest.png"><a class="top-albums-link">Never Gonna Give You Up</a><span class="albummaker-name">Mac Beez</span></li>
+                    <li class="top-albums-item"><img class="top-albums-image" src="img/artists/kanyewest.png"><a class="top-albums-link">Never Gonna Give You Up</a><span class="albummaker-name">Mac Beez</span></li>
+                </ul>
+                <a class="more-link" href="#">More albums<img class="more-link-image" src="img/icons/arrow_small_right.png"></a>
+            </section>
+            <section class="search-tracks">
+                <h2>Tracks</h2>
+                <ul class="top-tracks-list">
+                    <li class="top-tracks-item">
+                        <ul class="track-info-list">
+                            <li class="track-info-item">
+                                <a class="play-button"><img class="play-button-image" src="img/icons/play_dark.png"></a>
+                            </li>
+                            <li class="track-info-item">
+                                <img class="track-info-image" src="img/tracks/afterlike.png">
+                            </li>
+                            <li class="track-info-item"><p class="track-info-name">Never Gonna Give You Up</p></li>
+                            <li class="track-info-item"><p class="track-artist-name"> Rick Astley</p></li>
+                            <li class="track-info-item"><span class="track-duration">3:33</span></li>
+                        </ul>
+                    </li>
+                    <li class="top-tracks-item">
+                        <ul class="track-info-list">
+                            <li class="track-info-item">
+                                <a class="play-button"><img class="play-button-image" src="img/icons/play_dark.png"></a>
+                            </li>
+                            <li class="track-info-item">
+                                <img class="track-info-image" src="img/tracks/afterlike.png">
+                            </li>
+                            <li class="track-info-item"><p class="track-info-name">Never Gonna Give You Up</p></li>
+                            <li class="track-info-item"><p class="track-artist-name"> Rick Astley</p></li>
+                            <li class="track-info-item"><span class="track-duration">3:33</span></li>
+                        </ul>
+                    </li>
+                    <li class="top-tracks-item">
+                        <ul class="track-info-list">
+                            <li class="track-info-item">
+                                <a class="play-button"><img class="play-button-image" src="img/icons/play_dark.png"></a>
+                            </li>
+                            <li class="track-info-item">
+                                <img class="track-info-image" src="img/tracks/afterlike.png">
+                            </li>
+                            <li class="track-info-item"><p class="track-info-name">Never Gonna Give You Up</p></li>
+                            <li class="track-info-item"><p class="track-artist-name"> Rick Astley</p></li>
+                            <li class="track-info-item"><span class="track-duration">3:33</span></li>
+                        </ul>
+                    </li>
+                    <li class="top-tracks-item">
+                        <ul class="track-info-list">
+                            <li class="track-info-item">
+                                <a class="play-button"><img class="play-button-image" src="img/icons/play_dark.png"></a>
+                            </li>
+                            <li class="track-info-item">
+                                <img class="track-info-image" src="img/tracks/afterlike.png">
+                            </li>
+                            <li class="track-info-item"><p class="track-info-name">Never Gonna Give You Up</p></li>
+                            <li class="track-info-item"><p class="track-artist-name"> Rick Astley</p></li>
+                            <li class="track-info-item"><span class="track-duration">3:33</span></li>
+                        </ul>
+                    </li>
+                    <li class="top-tracks-item">
+                        <ul class="track-info-list">
+                            <li class="track-info-item">
+                                <a class="play-button"><img class="play-button-image" src="img/icons/play_dark.png"></a>
+                            </li>
+                            <li class="track-info-item">
+                                <img class="track-info-image" src="img/tracks/afterlike.png">
+                            </li>
+                            <li class="track-info-item"><p class="track-info-name">Never Gonna Give You Up</p></li>
+                            <li class="track-info-item"><p class="track-artist-name"> Rick Astley</p></li>
+                            <li class="track-info-item"><span class="track-duration">3:33</span></li>
+                        </ul>
+                    </li>
+                    <li class="top-tracks-item">
+                        <ul class="track-info-list">
+                            <li class="track-info-item">
+                                <a class="play-button"><img class="play-button-image" src="img/icons/play_dark.png"></a>
+                            </li>
+                            <li class="track-info-item">
+                                <img class="track-info-image" src="img/tracks/afterlike.png">
+                            </li>
+                            <li class="track-info-item"><p class="track-info-name">Never Gonna Give You Up</p></li>
+                            <li class="track-info-item"><p class="track-artist-name"> Rick Astley</p></li>
+                            <li class="track-info-item"><span class="track-duration">3:33</span></li>
+                        </ul>
+                    </li>
+                    <li class="top-tracks-item">
+                        <ul class="track-info-list">
+                            <li class="track-info-item">
+                                <a class="play-button"><img class="play-button-image" src="img/icons/play_dark.png"></a>
+                            </li>
+                            <li class="track-info-item">
+                                <img class="track-info-image" src="img/tracks/afterlike.png">
+                            </li>
+                            <li class="track-info-item"><p class="track-info-name">Never Gonna Give You Up</p></li>
+                            <li class="track-info-item"><p class="track-artist-name"> Rick Astley</p></li>
+                            <li class="track-info-item"><span class="track-duration">3:33</span></li>
+                        </ul>
+                    </li>
+                    <li class="top-tracks-item">
+                        <ul class="track-info-list">
+                            <li class="track-info-item">
+                                <a class="play-button"><img class="play-button-image" src="img/icons/play_dark.png"></a>
+                            </li>
+                            <li class="track-info-item">
+                                <img class="track-info-image" src="img/tracks/afterlike.png">
+                            </li>
+                            <li class="track-info-item"><p class="track-info-name">Never Gonna Give You Up</p></li>
+                            <li class="track-info-item"><p class="track-artist-name"> Rick Astley</p></li>
+                            <li class="track-info-item"><span class="track-duration">3:33</span></li>
+                        </ul>
+                    </li>
+                    <li class="top-tracks-item">
+                        <ul class="track-info-list">
+                            <li class="track-info-item">
+                                <a class="play-button"><img class="play-button-image" src="img/icons/play_dark.png"></a>
+                            </li>
+                            <li class="track-info-item">
+                                <img class="track-info-image" src="img/tracks/afterlike.png">
+                            </li>
+                            <li class="track-info-item"><p class="track-info-name">Never Gonna Give You Up</p></li>
+                            <li class="track-info-item"><p class="track-artist-name"> Rick Astley</p></li>
+                            <li class="track-info-item"><span class="track-duration">3:33</span></li>
+                        </ul>
+                    </li>
+                    <li class="top-tracks-item">
+                        <ul class="track-info-list">
+                            <li class="track-info-item">
+                                <a class="play-button"><img class="play-button-image" src="img/icons/play_dark.png"></a>
+                            </li>
+                            <li class="track-info-item">
+                                <img class="track-info-image" src="img/tracks/afterlike.png">
+                            </li>
+                            <li class="track-info-item"><p class="track-info-name">Never Gonna Give You Up</p></li>
+                            <li class="track-info-item"><p class="track-artist-name"> Rick Astley</p></li>
+                            <li class="track-info-item"><span class="track-duration">3:33</span></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a class="more-link" href="#">More tracks<img class="more-link-image" src="img/icons/arrow_small_right.png"></a>
+            </section>
+        </section>
+
+    </main>
+    <footer class="page-footer">
+      <section class="footer-links">
+        <ul class="company-list">
+          <h5 class="section-name">Company</h5>
+          <li class="company-item"><a class="company-link" href="https://www.last.fm/about">About Last.fm</a></li>
+          <li class="company-item"><a class="company-link" href="https://www.last.fm/about/contact">Contact Us</a></li>
+          <li class="company-item"><a class="company-link" href="https://www.last.fm/about/jobs">Jobs</a></li>
+        </ul>
+        <ul class="help-list">
+          <h5 class="section-name">Help</h5>
+          <li class="help-item"><a class="help-link" href="https://www.last.fm/about/trackmymusic">Track My Musik</a></li>
+          <li class="help-item"><a class="help-link" href="https://support.last.fm/">Community Support</a></li>
+          <li class="help-item"><a class="help-link" href="https://www.last.fm/help/guidelines">Community Guidelines</a></li>
+          <li class="help-item"><a class="help-link" href="https://www.last.fm/help/faq">Help</a></li>
+        </ul>
+        <ul class="goodies-list">
+          <h5 class="section-name">Goodies</h5>
+          <li class="goodies-item"><a class="goodies-link" href="https://www.last.fm/about/trackmymusic">Download Scrobbler</a></li>
+          <li class="goodies-item"><a class="goodies-link" href="https://www.last.fm/api">Developer API</a></li>
+          <li class="goodies-item"><a class="goodies-link" href="https://www.last.fm/music/+free-music-downloads">Free Musik Downloads</a></li>
+          <li class="goodies-item"><a class="goodies-link" href="https://store.last.fm/">Merchandise</a></li>
+        </ul>
+        <ul class="account-list">
+          <h5 class="section-name">Account</h5>
+          <li class="account-item"><a class="account-link" href="https://www.last.fm/inbox">Inbox</a></li>
+          <li class="account-item"><a class="account-link" href="https://www.last.fm/settings">Settings</a></li>
+          <li class="account-item"><a class="account-link" href="https://www.last.fm/pro">Last.fm Pro</a></li>
+          <li class="account-item"><a class="account-link" href="#">Logout</a></li>
+        </ul>
+        <ul class="follow-list">
+          <h5 class="section-name">Follow Us</h5>
+          <li class="follow-item"><a class="follow-link" href="https://www.facebook.com/lastfm">Facebook</a></li>
+          <li class="follow-item"><a class="follow-link" href="https://x.com/lastfm">X</a></li>
+          <li class="follow-item"><a class="follow-link" href="https://www.instagram.com/last_fm">Instagram</a></li>
+          <li class="follow-item"><a class="follow-link" href="https://www.youtube.com/user/lastfm">YouTube</a></li>
+        </ul>
+      </section>
+      </section>
+      <ul class="language-list">
+        <li class="language current">English</li>
+        <li class="language">Deutsch</li>
+        <li class="language">Español</li>
+        <li class="language">Français</li>
+        <li class="language">Italiano</li>
+        <li class="language">日本語</li>
+        <li class="language">Polski</li>
+        <li class="language">Português</li>
+        <li class="language">Русский</li>
+        <li class="language">Svenska</li>
+        <li class="language">Türkçe</li>
+        <li class="language">简体中文</li>
+      </ul>
+      <a class="audioscrobbler-link"><span>Audioscrobbler</span><img class="audioscrobbler-logo" src="img/logo/footer_logo.png" alt="Audioscrobbler"></a>
+    </footer>
+
+    <script src="script2.js"></script>
+  </body>
+</html>

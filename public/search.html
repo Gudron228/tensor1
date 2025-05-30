@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
@@ -13,14 +12,13 @@
     <title>React App</title>
   </head>
   <body>
-    <div id="root">
-      <header class="page-header">
+    <header class="page-header">
       <nav class="page-navigation">
         <div class="navigation-logo">
           <a href="index.html"><img src="img/logo/logo.png" alt="last.fm"></a>
         </div>
-        <ul class="navigation-list">
-          <li class="navigation-item"><a class="navigation-link search-link" href="search.html"><img src="img/icons/search.svg"><span class="visually-hidden">Поиск</span></a></li>
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-item"><a class="navigation-link" href="search.html"><img src="img/icons/search.svg"><span class="visually-hidden">Поиск</span></a></li>
           <li class="navigation-item"><a class="navigation-link" href="index.html">Home</a></li>
           <li class="navigation-item"><a class="navigation-link" href="#">Live</a></li>
           <li class="navigation-item"><a class="navigation-link" href="#">Music</a></li>
@@ -31,39 +29,55 @@
       </nav>
     </header>
     <main class="page-main">
-      <h1>Music</h1>
-      <section class="popular-musicmaker-top">
-        <h2 class="popular">Hot right now</h2>
-        <ul class="popular-musicmacker-list">
-          <li class="popular-musicmacker">
-            <a class="musicmaker-link"><img src="img/artists/kanyewest.png" alt="Kanye West"></a>
-            <h3 class="musicmaker-name">Kanye West</h3>
-            <ul class="musicmaker-genre-list">
-              <li class="musicmaker-genre">hip-hop</li>
-              <li class="musicmaker-genre">rap</li>
-              <li class="musicmaker-genre">hip hop</li>
+        <header class="search-main-header">
+            <h1 class="search-main">Search results for "never gonna give you up"</h1>
+            <ul class="search-results-list">
+                <li class="search-results-item"><a class="search-results-link search-link-current" href="#">Top Results</a></li>
+                <li class="search-results-item"><a class="search-results-link" href="#">Artists</a></li>
+                <li class="search-results-item"><a class="search-results-link" href="#">Albums</a></li>
+                <li class="search-results-item"><a class="search-results-link" href="#">Tracks</a></li>
             </ul>
-          </li>
-        </ul>
-      </section>
-      <section class="popular-tracks">
-        <h2 class="popular">Popular tracks</h2>
-        <ul class="popular-tracks-list">
-          <li class="popular-track">
-            <a class="track-link"><img src="img/tracks/afterlike.png" alt=""></a>
-            <div class="track-info">
-              <h3 class="track-name">After LIKE</h3>
-            <h4 class="artist-name">IVE</h4>
-            <ul class="musical-genre-list">
-              <li class="musical-genre">k-pop</li>
-              <li class="musical-genre">disco</li>
-              <li class="musical-genre">soty</li>
-            </ul>
-            </div>
-          </li>
-         
-        </ul>
-      </section>
+        </header>
+        <section class="search-results">
+            <form id="searchForm">
+                <input type="text" class="search-input" placeholder="never gonna give you up">
+                <button type="button" class="clear-button" onclick="clearSearch()"><img src="img/icons/clear_field.png"><span class="visually-hidden">Очистить</span></button>
+                <button type="submit" class="search-button"><img src="img/icons/search_dark.png"><span class="visually-hidden">Поиск</span></button>
+            </form>
+            <section class="search-artists">
+                <h2>Artists</h2>
+                <ul class="top-artists-list">
+                    <li class="top-artists-item"><img class="top-artists-image" src="img/artists/kanyewest.png"><a class="top-artists-link">Never Gonna Give You Up</a><span class="artist-listeners">1,751 listeners</span></li>
+                </ul>
+                <a class="more-link" href="#">More artists<img class="more-link-image" src="img/icons/arrow_small_right.png"></a>
+            </section>
+            <section class="search-albums">
+                <h2>Albums</h2>
+                <ul class="top-albums-list">
+                    <li class="top-albums-item"><img class="top-albums-image" src="img/artists/kanyewest.png"><a class="top-albums-link">Never Gonna Give You Up</a><span class="albummaker-name">Mac Beez</span></li>
+                </ul>
+                <a class="more-link" href="#">More albums<img class="more-link-image" src="img/icons/arrow_small_right.png"></a>
+            </section>
+            <section class="search-tracks">
+                <h2>Tracks</h2>
+                <ul class="top-tracks-list">
+                    <li class="top-tracks-item">
+                        <ul class="track-info-list">
+                            <li class="track-info-item">
+                                <a class="play-button"><img class="play-button-image" src="img/icons/play_dark.png"></a>
+                            </li>
+                            <li class="track-info-item">
+                                <img class="track-info-image" src="img/tracks/afterlike.png">
+                            </li>
+                            <li class="track-info-item"><p class="track-info-name">Never Gonna Give You Up</p></li>
+                            <li class="track-info-item"><p class="track-artist-name"> Rick Astley</p></li>
+                        </ul>
+                    </li>
+                </ul>
+                <a class="more-link" href="#">More tracks<img class="more-link-image" src="img/icons/arrow_small_right.png"></a>
+            </section>
+        </section>
+
     </main>
     <footer class="page-footer">
       <section class="footer-links">
@@ -102,6 +116,7 @@
           <li class="follow-item"><a class="follow-link" href="https://www.youtube.com/user/lastfm">YouTube</a></li>
         </ul>
       </section>
+      </section>
       <ul class="language-list">
         <li class="language current">English</li>
         <li class="language">Deutsch</li>
@@ -118,7 +133,6 @@
       </ul>
       <a class="audioscrobbler-link"><span>Audioscrobbler</span><img class="audioscrobbler-logo" src="img/logo/footer_logo.png" alt="Audioscrobbler"></a>
     </footer>
-    </div>
 
   </body>
 </html>

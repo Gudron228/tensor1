@@ -1,0 +1,402 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #000;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.page-header {
+    background-color: #000;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-navigation {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.navigation-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+}
+
+.navigation-item {
+    margin: 0 10px;
+}
+
+.navigation-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navigation-link:hover {
+    text-decoration: underline;
+}
+
+.navigation-logo {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.navigation-logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.page-main {
+    padding: 20px;
+    text-align: center;
+}
+
+.popular {
+    color: #000;
+    border-bottom: 3px solid #ac1c1c;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.popular-musicmacker-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.popular-musicmacker {
+    margin: 5px;
+    text-align: center;
+    flex-basis: calc(16.666% - 20px);
+    box-sizing: border-box;
+}
+
+.musicmaker-link {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.musicmaker-link img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.musicmaker-name{
+    margin: 10px 0;
+}
+
+.musicmaker-genre-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.musicmaker-genre {
+    margin: 0 5px;
+    color: #aaa;
+    font-size: 12px;
+}
+
+.popular-tracks-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.popular-track {
+    margin: 10px;
+    display: flex;
+    text-align: center;
+    flex-basis: calc(33.333% - 20px);
+    box-sizing: border-box;
+}
+
+.track-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.track-name, .artist-name {
+    margin: 5px 0;
+}
+
+.artist-name {
+    color: #504c4c;
+}
+
+.track-link img {
+    width: 100px;
+    height: 100px;
+}
+
+.musical-genre-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.musical-genre {
+    margin: 0 auto;
+    color: #aaa;
+    font-size: 12px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #000;
+    margin-top: 5px;
+    border-bottom: 1px solid #aaa;
+}
+
+.section-name {
+    color: #aaa;
+    margin-bottom: 10px;
+}
+
+.company-list, .help-list, .goodies-list, .account-list, .follow-list {
+    list-style: none;
+    padding: 0;
+}
+
+.company-item, .help-item, .goodies-item, .account-item, .follow-item {
+    margin: 5px 0;
+}
+
+.company-link, .help-link, .goodies-link, .account-link, .follow-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+.company-link:hover, .help-link:hover, .goodies-link:hover, .account-link:hover, .follow-link:hover {
+    text-decoration: underline;
+}
+
+
+.search-main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-main {
+    margin: 0;
+    font-size: 24px;
+}
+
+.search-results-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.search-results-item {
+    margin: 0 10px;
+}
+
+.search-results-link {
+    color: #000;
+    text-decoration: none;
+}
+
+.search-link-current {
+    color: #ac1c1c;
+    font-weight: bold;
+}
+
+.search-results {
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    padding: 8px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+}
+
+.clear-button, .search-button {
+    padding: 8px 16px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+.clear-button {
+    background-color: #6c757d;
+    border: 1px solid #6c757d;
+}
+
+.clear-button:hover, .search-button:hover {
+    background-color: #5a6268;
+}
+
+.search-artists, .search-albums, .search-tracks {
+    margin-bottom: 30px;
+}
+
+.top-artists-list, .top-albums-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+}
+
+.top-artists-item, .top-albums-item {
+    margin: 10px;
+    text-align: center;
+    flex-basis: calc(25% - 20px);
+    box-sizing: border-box;
+}
+
+.top-artists-image, .top-albums-image {
+    width: 100px;
+    height: 100px;
+
+}
+
+.top-artists-link, .top-albums-link {
+    color: #000;
+    text-decoration: none;
+    display: block;
+}
+
+.artist-listeners, .albummaker-name {
+    color: #aaa;
+    font-size: 12px;
+}
+
+.track-info-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+
+.track-info-item {
+    margin: 0 5px;
+}
+
+.track-info-name, .track-artist-name {
+    margin: 0;
+}
+
+.track-duration {
+    color: #aaa;
+    font-size: 12px;
+}
+
+.more-link {
+    color: #007bff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.more-link-image {
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+}
+
+.play-button {
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.play-button-image {
+    width: 20px;
+    height: 20px;
+}
+
+.page-footer {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+.language-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.language {
+    margin: 0 10px;
+    color: #aaa;
+}
+
+.current {
+    color: #fff;
+}
+
+.audioscrobbler-link {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.audioscrobbler-link span {
+    margin-right: 10px;
+    
+}
+
+.audioscrobbler-logo {
+    width: 50px;
+    height: 25px;
+}
+
+.loading, .no-results, .error {
+    padding: 20px;
+    text-align: center;
+    font-style: italic;
+    color: #666;
+}
+
+.error {
+    color: #d33;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
